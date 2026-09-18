@@ -1,0 +1,16 @@
+name: skip-sentry
+id: ari:cloud:compass:433f2c52-baf3-4040-bf96-3fd09bf998da:component/c10a88dc-15a4-484b-b7c7-f1c56f373c78/d46bdf1e-eaa3-4ae7-8cd1-614a281e1f1b
+description: Skip support for the sentry.io SDK for iOS and Android
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/MollisWare/skip-sentry
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
