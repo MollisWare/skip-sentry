@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(name: "SkipSentry", dependencies: [
             .product(name: "SkipFoundation", package: "skip-foundation"),
-            .product(name: "Sentry", package: "sentry-cocoa"),
+            .product(name: "Sentry", package: "sentry-cocoa", condition: .when(platforms: [.macOS, .iOS, .tvOS, .watchOS, .macCatalyst, .visionOS])),
         ], resources: [.process("Resources")], plugins: [.plugin(name: "skipstone", package: "skip")]),
         .testTarget(name: "SkipSentryTests", dependencies: [
             "SkipSentry",
